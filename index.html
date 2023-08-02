@@ -28,6 +28,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/glowCookies.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: UpConstruction - v1.1.0
@@ -834,7 +835,15 @@
               <li><a href="#despre-noi">Despre Noi</a></li>
               <li><a href="#autorizari">Autorizări/Certificări</a></li>
               <li><a href="contact.html">Contact</a></li>
+             
             
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Politica de confidențialitate:</h4>
+            <ul>
+              <li><a href="cookie.html">GDPR</a></li>
             </ul>
           </div><!-- End footer links column-->
 
@@ -880,6 +889,32 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    glowCookies.start('en', { 
+         style: 2,
+         analytics: '', 
+         facebookPixel: '',
+         hideAfterClick: true,
+         border: 'none',
+         position: 'right',
+         policyLink: 'cookie.html',
+         customScript: [{ type: 'custom', position: 'body', content: `console.log('my custom js');` }],
+         bannerDescription: 'Utilizăm cookie-uri, pentru a-ți arăta conținut personalizat. Continuarea înseamnă acceptul tău',
+         bannerLinkText: '',
+         bannerBackground: '#B6B4B4',
+         bannerColor: '#fafafa',
+         bannerHeading: '<h2>Cookies</h2>',
+         acceptBtnText: 'Accept',
+         acceptBtnColor: '#B5F8AD',
+         acceptBtnBackground: '#747373',
+         rejectBtnText: 'Refuz',
+         rejectBtnBackground: '#747373',
+         rejectBtnColor: '#B5F8AD',
+         manageColor: 'white',
+         manageBackground: 'blue',
+         manageText: 'cookies text'
+     });
+  </script>
 
 </body>
 
